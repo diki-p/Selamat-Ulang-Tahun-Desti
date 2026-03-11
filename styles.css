@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0e68c;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#loading-screen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.8);
+    font-size: 2em;
+}
+
+#candle-animation {
+    /* Candle animation styles */
+}
+
+#envelope-animation {
+    /* Envelope animation styles */
+}
+
+#letter-animation {
+    /* Letter animation styles */
+}
+
+#gift-box-animation {
+    /* Gift box animation styles */
+}
