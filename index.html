@@ -1,19 +1,70 @@
+====================== index.html ======================
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <title>Happy Birthday!</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Special For Desti 💖</title>
+<link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <div id="loading-screen">Loading...</div>
-    <div id="birthday-container" style="display: none;">
-        <div id="candle-animation"></div>
-        <div id="envelope-animation"></div>
-        <div id="letter-animation"></div>
-        <div id="gift-box-animation"></div>
-        <h1>Happy Birthday, Desti!</h1>
-        <p>Wishing you a day filled with love, joy, and wonderful surprises!</p>
-    </div>
-    <script src="script.js"></script>
+
+<div class="stars" id="stars"></div>
+
+<!-- LOADING -->
+<div id="loading" class="page">
+  <div class="loading">✨ Special For Desti ✨</div>
+</div>
+
+<!-- PAGE 1 -->
+<div id="page1" class="page hidden">
+  <h1>Selamat Ulang Tahun</h1>
+  <h2>Desti Afyani 🎂</h2>
+  <p>Klik lilinnya dulu ya ✨</p>
+
+  <div class="candle" onclick="nextPage()">
+    <div class="flame"></div>
+  </div>
+</div>
+
+<!-- PAGE 2 -->
+<div id="page2" class="page hidden">
+  <h1>Ada surat untukmu 💌</h1>
+
+  <div id="env" class="envelope" onclick="openEnvelope()">
+    <div class="flap"></div>
+  </div>
+
+  <p>Klik amplopnya</p>
+</div>
+
+<!-- PAGE 3 -->
+<div id="page3" class="page hidden">
+
+  <div class="letter-card" id="letterText"></div>
+
+  <div class="gift" id="gift" onclick="openGift()">
+    <div class="gift-lid"></div>
+  </div>
+
+  <p>Buka hadiahnya 🎁</p>
+
+  <div id="giftMsg" class="gift-message hidden">
+    Semoga semua impianmu tercapai dan wisuda tahun ini 🎓💖
+  </div>
+
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
+
+
+====================== styles.css ======================
+body{
+  margin:0;
+  font-family:'Segoe UI',sans-serif;
+  height:100vh;
+  overflow:hidden;
+  background:#000;
